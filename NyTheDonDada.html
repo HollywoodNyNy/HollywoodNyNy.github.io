@@ -102,6 +102,7 @@ small {
       <li><button onclick=appetizers()>Appetizers</button></li>
       <li><button onclick=entrees()>Entrees</button></li>
       <li><button onclick=desserts()>Desserts</button></li>
+      <li><button onclick=specials()>Specials</button></li>
   </ul>
     
 <h1>NY's Nice Meals</h1>
@@ -197,7 +198,7 @@ function desserts() {
     Pow.innerHTML += dessertsDivs[2]
     Pow.innerHTML += dessertsDivs[3]
    items = document.getElementsByClassName("item")
-    for (i=0; i<3; i=i+1) {
+    for (i=0; i<4; i=i+1) {
 		  items[i].style.background = dessertsImages[i]
 		  items[i].style.backgroundSize = '100% 100%'
     }
