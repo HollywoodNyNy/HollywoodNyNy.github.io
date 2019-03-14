@@ -128,6 +128,10 @@ dessertsImages = [
        'url(https://www.bakefromscratch.com/wp-content/uploads/2016/08/DSC8607-696x557.jpg)',
        'url(http://kristinakuzmic.com/wp-content/uploads/2013/06/KK_RecipeImage_MoltenChocCakeopt.jpg)',
     ]
+specialsImages = [
+       'url(https://moviewriternyu.files.wordpress.com/2018/02/free-refills.jpg)',
+       'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReyMKCAnmADRAHkTLut0XKu-zDJnpOHD_kBq7MfY2pE9GCb2xr4w)',
+]
 appetizersDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Siracha Chicken Potato Skins <span class="price">$14</span><br /><small> Crispy skins loaded with spicy Sriracha chicken and Asiago queso, then drizzled with Sriracha aoli and garnished with green onions. </small></p></div>',
 
@@ -155,6 +159,10 @@ dessertsDivs = [
 	
 ]
 
+specialsDivs = [ 
+  '<div class="item"><p>Free Refills<span class="price">$8</span><br /><small>Every day after 12 PM there will be free refills on all softdrinks and juices. (Alcoholic beverages are not included)</small></p></div>',
+  '<div class="item"><p>2 for 20<span class="price">$8</span><br /><small>The first and last friday of every month you can get any 2 entrees for 20 dollars.</small></p></div>',
+]
 function appetizers() {
     Pow = document.getElementById("Boom")
     Pow.innerHTML = ''
@@ -194,6 +202,18 @@ function desserts() {
 		  items[i].style.backgroundSize = '100% 100%'
     }
 }
+	
+function specials() {
+  Pow = document.getElementById("Boom")
+    Pow.innerHTML = ''
+	  Pow.innerHTML += specialsDivs[0]
+    Pow.innerHTML += specialsDivs[1]
+   items = document.getElementsByClassName("item")
+    for (i=0; i<3; i=i+1) {
+		  items[i].style.background = specialsImages[i]
+		  items[i].style.backgroundSize = '100% 100%'
+    }
+}	
 
 </script>
 
