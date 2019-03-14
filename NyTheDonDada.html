@@ -160,8 +160,8 @@ dessertsDivs = [
 ]
 
 specialsDivs = [ 
-  '<div class="item"><p>Free Refills<span class="price">$8</span><br /><small>Every day after 12 PM there will be free refills on all softdrinks and juices. (Alcoholic beverages are not included)</small></p></div>',
-  '<div class="item"><p>2 for 20<span class="price">$8</span><br /><small>The first and last friday of every month you can get any 2 entrees for 20 dollars.</small></p></div>',
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Free Refills<span class="price">$8</span><br /><small>Every day after 12 PM there will be free refills on all softdrinks and juices. (Alcoholic beverages are not included)</small></p></div>',
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>2 for 20<span class="price">$8</span><br /><small>The first and last friday of every month you can get any 2 entrees for 20 dollars.</small></p></div>',
 ]
 function appetizers() {
     Pow = document.getElementById("Boom")
@@ -206,7 +206,7 @@ function desserts() {
 function specials() {
   Pow = document.getElementById("Boom")
     Pow.innerHTML = ''
-	  Pow.innerHTML += specialsDivs[0]
+          Pow.innerHTML += specialsDivs[0]
     Pow.innerHTML += specialsDivs[1]
    items = document.getElementsByClassName("item")
     for (i=0; i<3; i=i+1) {
