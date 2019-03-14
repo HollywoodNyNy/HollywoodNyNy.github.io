@@ -121,6 +121,8 @@ EntreesImages = [
        'url(http://socobk.com/wp-content/uploads/2014/07/DSC0094.jpg)',
        'url(https://media-cdn.tripadvisor.com/media/photo-s/0c/b7/a9/8e/jack-daniels-ribs.jpg)',
        'url(https://www.tasteofhome.com/wp-content/uploads/0001/01/Bacon-Cheeseburgers-with-Fry-Sauce_EXPS_THAM19_232817_B11_08_3b-696x696.jpg)',
+       'url(https://i.pinimg.com/originals/11/67/70/116770a78da1209a733d3b9108f3192d.jpg)',
+       'url(https://www.tablefortwoblog.com/wp-content/uploads/2012/02/alfredo-pasta-cajun-chicken-2.jpg)',
 ]
 
 dessertsImages = [
@@ -147,6 +149,11 @@ entreesDivs = [
 '<div class="item"onclick=this.classList.toggle("show-description")><p>Jack Daniels Ribs<span class="price">$22</span><br /><small>Delicious full rack of fall off the bone pork ribs with Jaack Daniel sauce and a side of fries.</small></p></div>',
   
 '<div class="item"onclick=this.classList.toggle("show-description")><p>Bacon Cheeseburger<span class="price">$8</span><br /><small>Well done burger patty with fresh sharp cheddar cheese and applewood smoked bacon and BBQ sauce. Fried onion rings are optional</small></p></div>',
+
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Steak and Mash<span class="price">$8</span><br /><small>4 lb. steak well done on top of mash witha side of asparagus.</small></p></div>',
+
+'<div class="item"onclick=this.classList.toggle("show-description")><p>hicken Linguini Alfredo<span class="price">$8</span><br /><small>Linguini pasta topped with creamy alfredo sauce and spicy cajun chicken.</small></p></div>',
+
 ]
 
 dessertsDivs = [
@@ -157,7 +164,7 @@ dessertsDivs = [
 '<div class="item"onclick=this.classList.toggle("show-description")><p>Cinnamon Rolls<span class="price">$8</span><br /><small>Hand rolled cinnamon rolls with creamy frosting on top.</small></p></div>',
 
 '<div class="item"onclick=this.classList.toggle("show-description")><p>Chocolate Lava Cake<span class="price">$8</span><br /><small>Chocolate cake with a warm chocolate syrup filling with powdered sugar on top and a chocolate dipped strawberry on the side.</small></p></div>',
-	
+
 ]
 
 specialsDivs = [ 
@@ -183,8 +190,10 @@ function entrees() {
 	  Pow.innerHTML += entreesDivs[0]
     Pow.innerHTML += entreesDivs[1]
     Pow.innerHTML += entreesDivs[2]
+    Pow.innerHTML += entreesDivs[3]
+    Pow.innerHTML += entreesDivs[4]
   items = document.getElementsByClassName("item")
-    for (i=0; i<3; i=i+1) {
+    for (i=0; i<5; i=i+1) {
 		  items[i].style.background = EntreesImages[i]
 		  items[i].style.backgroundSize = '100% 100%'
     }
