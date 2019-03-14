@@ -129,29 +129,29 @@ dessertsImages = [
        'url(http://kristinakuzmic.com/wp-content/uploads/2013/06/KK_RecipeImage_MoltenChocCakeopt.jpg)',
     ]
 appetizersDivs = [
-  '<div class="item"><p>Siracha Chicken Potato Skins <span class="price">$14</span><br /><small> Crispy skins loaded with spicy Sriracha chicken and Asiago queso, then drizzled with Sriracha aoli and garnished with green onions. </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Siracha Chicken Potato Skins <span class="price">$14</span><br /><small> Crispy skins loaded with spicy Sriracha chicken and Asiago queso, then drizzled with Sriracha aoli and garnished with green onions. </small></p></div>',
 
-'<div class="item"><p>Boneless Wings<span class="price">$22</span><br /><small>Bonless white meat chicken that comes ineither BBQ, Buffalo, or Asian Chilli.</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Boneless Wings<span class="price">$22</span><br /><small>Bonless white meat chicken that comes ineither BBQ, Buffalo, or Asian Chilli.</small></p></div>',
   
-'<div class="item"><p>Mozzarella Sticks<span class="price">$8</span><br /><small>Freshly battered pieces of mozzerella.</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Mozzarella Sticks<span class="price">$8</span><br /><small>Freshly battered pieces of mozzerella.</small></p></div>',
 ]
 
 entreesDivs = [
-  '<div class="item"><p>Chicken and Waffles <span class="price">$14</span><br /><small> Fresh and never frozen crispy fried chicken on top of a red velvet waffle.</small></p></div>',
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Chicken and Waffles <span class="price">$14</span><br /><small> Fresh and never frozen crispy fried chicken on top of a red velvet waffle.</small></p></div>',
 
-'<div class="item"><p>Jack Daniels Ribs<span class="price">$22</span><br /><small>Delicious full rack of fall off the bone pork ribs with Jaack Daniel sauce and a side of fries.</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Jack Daniels Ribs<span class="price">$22</span><br /><small>Delicious full rack of fall off the bone pork ribs with Jaack Daniel sauce and a side of fries.</small></p></div>',
   
-'<div class="item"><p>Bacon Cheeseburger<span class="price">$8</span><br /><small>Well done burger patty with fresh sharp cheddar cheese and applewood smoked bacon and BBQ sauce. Fried onion rings are optional</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Bacon Cheeseburger<span class="price">$8</span><br /><small>Well done burger patty with fresh sharp cheddar cheese and applewood smoked bacon and BBQ sauce. Fried onion rings are optional</small></p></div>',
 ]
 
 dessertsDivs = [
-  '<div class="item"><p>Triple Layer Chocolate Mousse <span class="price">$14</span><br /><small>Whipped and Creamy chocolate mouse with vanilla bean at the top. Its a delight to your taste buds.</small></p></div>',
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Triple Layer Chocolate Mousse <span class="price">$14</span><br /><small>Whipped and Creamy chocolate mouse with vanilla bean at the top. Its a delight to your taste buds.</small></p></div>',
 
-'<div class="item"><p>Red Velvet Cake<span class="price">$22</span><br /><small>Soft, moist and delicious classic red velvet cake.</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Red Velvet Cake<span class="price">$22</span><br /><small>Soft, moist and delicious classic red velvet cake.</small></p></div>',
   
-'<div class="item"><p>Cinnamon Rolls<span class="price">$8</span><br /><small>Hand rolled cinnamon rolls with creamy frosting on top.</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Cinnamon Rolls<span class="price">$8</span><br /><small>Hand rolled cinnamon rolls with creamy frosting on top.</small></p></div>',
 
-'<div class="item"><p>Chocolate Lava Cake<span class="price">$8</span><br /><small>Chocolate cake with a warm chocolate syrup filling with powdered sugar on top and a chocolate dipped strawberry on the side.</small></p></div>',
+'<div class="item"onclick=this.classList.toggle("show-description")><p>Chocolate Lava Cake<span class="price">$8</span><br /><small>Chocolate cake with a warm chocolate syrup filling with powdered sugar on top and a chocolate dipped strawberry on the side.</small></p></div>',
 	
 ]
 
@@ -195,9 +195,6 @@ function desserts() {
     }
 }
 
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
 </script>
 
 </body>
