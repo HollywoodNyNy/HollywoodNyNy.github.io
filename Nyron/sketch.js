@@ -65,7 +65,8 @@ function draw() {
   n = n + 5*direction_horiz1
   m = m + 5*direction_vert1
 
-  
+  if (touches.length == 0)   {
+	  
   if (keyIsDown(LEFT_ARROW)){
     x = x - 9
   }
@@ -77,7 +78,16 @@ function draw() {
   }
   if (keyIsDown(DOWN_ARROW)){
     y = y + 9
-  }
+  }	
+
+}
+
+else { 
+		 100= touches[0].x
+		 500= touches[0].y
+}
+
+	  
 
   if ( n > width || n<0) {
 	direction_horiz1 = direction_horiz1*-1
